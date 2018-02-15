@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Worker List</title>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>銘柄</th>
+        <th>生産地</th>
+        <th>種類</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for sake_wise in sakes %}
+        <tr>
+          <td>{{sake_wise.brand}}</td>
+          <td>{{sake_wise.producing_area}}</td>
+          <td>{{sake_wise.sake_type}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+  </table>
+</body>
+</html>
